@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dear Olivia, </title>
+  </head>
+  <body>
+    <h1 id = "header">Dear Olivia,</h1>
+    <table>
+      <tr>
+        <td>
+          <button class = "btn" id = "a"  onclick = "ILY_play()">I love you</button>
+        </td>
+        <td>
+          <button class = "btn" id = "b" onclick = "IMU_play()">I miss you</button>
+        </td>
+        <td>
+          <button class = "btn" id = "c" onclick = "SYS_play()">See you soon</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+
+<script type="text/javascript">
+
+
+  var btna = document.getElementById("a");
+  var btnb = document.getElementById("b");
+  var btnc = document.getElementById("c");
+
+  function ILY_play() {
+    var audio = new Audio("Assets/Sounds/");
+    audio.play();
+  }
+  function IMU_play() {
+    var audio = new Audio("Assets/Sounds/");
+    audio.play();
+  }
+  function SYS_play() {
+    var audio = new Audio("Assets/Sounds/");
+    audio.play();
+  }
+
+
+
+
+
+
+</script>
+
+
+
+
+
+<style>
+  body {
+      margin : 0;
+      height : 928px;
+
+      background-image: linear-gradient(
+        30deg,
+        hsl(0deg 0% 0%) 0%,
+        hsl(53deg 43% 5%) 6%,
+        hsl(53deg 14% 10%) 14%,
+        hsl(53deg 10% 14%) 23%,
+        hsl(53deg 8% 18%) 33%,
+        hsl(52deg 7% 22%) 43%,
+        hsl(38deg 7% 25%) 55%,
+        hsl(28deg 6% 29%) 66%,
+        hsl(19deg 5% 32%) 78%,
+        hsl(10deg 4% 35%) 89%,
+        hsl(0deg 3% 38%) 100%
+      );
+
+      position relative
+    }
+
+    td {
+      padding : 80px;
+    }
+
+    table {
+      margin-left : auto;
+      margin-right : auto;
+      margin-top : 10%;
+    }
+
+    #header {
+      font-size : 4em;
+      display : inline-block;
+      position : relative;
+      left : 25%;
+      width : 50%;
+      text-align : center;
+      top : 15%;
+    }
+
+
+    .btn {
+      width : 250px;
+      height : 100px;
+
+      font: italic 2rem "Fira Sans", serif;
+      background: #CF87B0;
+      background: linear-gradient(to top right, #CF87B0 0%, #CF4725 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      -webkit-box-shadow: 0px 0px 39px 0px #000000;
+      box-shadow: 0px 0px 39px 0px #000000;
+    }
+</style>
+
+
+</html>
